@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #countdown {
+      text-align: center;
+      font-size: 2em;
+    }
+  </style>
+  <title>Countdown Clock</title>
+</head>
+<body>
+
+<div id="countdown"></div>
+
+<script>
+  const countDownDate = new Date("Dec 22, 2023 14:36:00").getTime();
+
+  const x = setInterval(function() {
+    const now = new Date().getTime();
+
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const milliseconds = Math.floor(distance % 1000);
+
+    document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s ${milliseconds}ms`;
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+  }, 1);
+</script>
+
+</body>
+</html>
+

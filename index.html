@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>userland</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" href="./assets/pfp.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="flex">
+      <button type="button" onclick="toggleCSS()" class="disable-css card">
+        Toggle CSS (for mobile users)
+      </button>
+      <button
+        type="button"
+        onclick="toggleWallpaper()"
+        class="disable-css card"
+      >
+        Toggle Wallpaper
+      </button>
+    </div>
+    <header class="cont">
+      <img id="profile-image" src="./assets/pfp.png" alt="Profile Picture" />
+      <h1>welcome to my corner of the www</h1>
+    </header>
+
+    <div class="snow">
+      <div></div>
+    </div>
+    <!-- <div class="terminal no">
+      <pre id="output"></pre>
+      <div class="input-prompt">enter your command:</div>
+      <input id="input" type="text" autofocus />
+    </div> -->
+
+    <div class="flex">
+      <aside class="left">
+        <h1>Website updates</h1>
+        <ul>
+          <li><code>[1.1.2024] - </code>Happy New Year!!!</li>
+          <li><code>[25.12.2023] - </code>Merry Christmas!</li>
+          <li>
+            <code>[23.12.2023] - </code>Added a new page regarding my newest
+            hobby - <a href="ps.html">penspinning!</a>
+          </li>
+          <li>
+            <code>[23.11.2023] - </code>Added a blog! Visit the first post
+            <a href="./blog/blog.html">HERE.</a>
+          </li>
+          <li>
+            <code>[19.11.2023] - </code>Complete website overhaul! This is the
+            <code>6th</code> major UI revision of this website.
+          </li>
+        </ul>
+        <h1>Life updates</h1>
+        <ul>
+          <li>
+            <code>[19.11.2023] - </code>My personal life is very busy right now.
+            Do not expect any website updates/blog posts for a while (at least
+            not until winter break)
+          </li>
+        </ul>
+        <h1>Cool link dump</h1>
+        <ul>
+          <li>
+            <a
+              href="https://lainchan.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Lainchan (for my fellow SEL fans)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.libgen.is/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Library Genesis</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/justanotherinternetguy/awesome-piracy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Awesome Piracy (my own fork)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/codecrafters-io/build-your-own-x"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Build Your Own *</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.textfiles.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Text Files</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.anarchistfaq.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Anarchist FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://eldritchdata.neocities.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Eldritch Data</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://spyware.neocities.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Spyware Watchdog (outdated but still useful)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://digdeeper.neocities.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >DigDeeper</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://tildeverse.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >~/verse communities</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://crazazy.tilde.cafe/cig.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >From a fellow tildeverser - Link Dump</a
+            >
+          </li>
+        </ul>
+        <img src="./assets/jupter.jpg" class="asideimg" />
+      </aside>
+
+      <main class="main">
+        <p>
+          This is my own little website and blog that I manage. I started
+          maintaining my own website in 2020. I have gone through countless
+          overhauls, so don't be alarmed if my website completely changes one
+          day.
+        </p>
+        <p>Some fun facts about me...</p>
+        <ul>
+          <li>
+            I was born and spent my early years in Shanghai before moving to the
+            United States. I consider myself
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Critical_period_hypothesis"
+              >lucky enough</a
+            >
+            that I was exposed to English at just the right time to speak both
+            Mandarin and English fluently.
+          </li>
+          <li>
+            I am an
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/User:Justanotherinternetguy"
+              >active Wikipedia editor</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.technoanarchism.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Techno-<span style="color: red">Anar</span
+              ><span style="color: BLACK">chist</span>
+            </a>
+          </li>
+          <ul>
+            <li>
+              I support technological progression and research - I believe that
+              modern technology has made our lives better, although modern usage
+              and application of technology has become an issue. Tech is too
+              much focused on profit and violates human rights to privacy while
+              trying to make a larger profit.
+            </li>
+            <li>
+              In a similar vein, I also support the GNU/FOSS movements and
+              advocate for freedom information and consumer privacy on the
+              internet.
+            </li>
+          </ul>
+        </ul>
+        <p>In my free time, I am a...</p>
+
+        <div id="accordion">
+          <div class="accordion-item">
+            <button type="button" class="accordion-header">Programmer</button>
+            <div class="accordion-content">
+              <p>
+                Computer science has been my biggest hobby since my middle
+                school years. I love everything to do with computers. I am
+                involved in programming for robotics, machine learning, and web
+                development.
+              </p>
+              <p>My current development environment consists of:</p>
+              <ul>
+                <li>NixOS w/ GNOME or i3</li>
+                <li>
+                  <a target="_blank" href="https://neovide.dev/">Neovide</a> and
+                  <a target="_blank" href="https://www.gnu.org/software/emacs/"
+                    >Emacs</a
+                  >
+                  as my main text editor(s) with
+                  <a target="_blank" href="https://vscodium.com/">VS Codium</a>
+                  as an IDE
+                </li>
+                <ul>
+                  <li>
+                    I use the
+                    <a target="_blank" href="https://www.lunarvim.org/"
+                      >LunarVim</a
+                    >
+                    and
+                    <a target="_blank" href="https://astronvim.com/"
+                      >AstroNvim</a
+                    >
+                    configuration(s) for
+                    <a href="https://neovim.io/" target="_blank">NeoVim</a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://github.com/doomemacs/doomemacs"
+                      >Doom Emacs</a
+                    >
+                    for my Emacs configuration
+                  </li>
+                </ul>
+                <li>
+                  <a target="_blank" href="https://alacritty.org/">Alacritty</a>
+                  and
+                  <a target="_blank" href="https://github.com/tmux/tmux"
+                    >tmux</a
+                  >
+                  for terminal emulation
+                </li>
+                <li>
+                  <a target="_blank" href="https://ohmyz.sh/"
+                    >Oh-My-Zsh + zsh</a
+                  >
+                  as a shell. I also use
+                  <a target="_blank" href="https://www.nushell.sh/">nushell</a>
+                  occasionally
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header">Linux user</button>
+            <div class="accordion-content">
+              <p>
+                I run <a target="_blank" href="https://nixos.org/">NixOS</a> on
+                my desktop workstation. I also run
+                <a target="_blank" href="https://archlinux.org/">Arch</a> and
+                <a target="_blank" href="https://www.opensuse.org/">OpenSUSE</a>
+                oh my two laptops. I have been running Linux on my computers
+                since 2020 and I do not regret completely switching my workflow
+                over to Linux.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header">Conlanger</button>
+            <div class="accordion-content">
+              <p>
+                I enjoy learning and creating conlangs well as studying general
+                linguistics in my free time. I can speak
+                <a
+                  target="_blank"
+                  href="https://en.wikipedia.org/wiki/Toki_Pona"
+                  >toki pona</a
+                >
+                and am currently learning
+                <a
+                  target="_blank"
+                  href="https://eo.wikipedia.org/wiki/Vikipedio"
+                  >Esperanto</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h1>Contact me at:</h1>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/justanotherinternetguy/justanotherinternetguy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a href="mailto:contact@justanotherinternetguy.wiki"
+              >contact@justanotherinternetguy.wiki</a
+            >
+            (feel free to encrypt with PGP)
+          </li>
+          <li>
+            <a href="mailto:normalizedlinuxusr@proton.me"
+              >normalizedlinuxusr@proton.me</a
+            >
+            (feel free to encrypt with PGP)
+          </li>
+          <li>
+            <a href="mailto:contact.wired@skiff.com">contact.wired@skiff.com</a>
+            (feel free to encrypt with PGP)
+          </li>
+          <li id="skip">
+            <a href="#skip">justanotherinternetguy@macaw.me</a> (XMPP) - I don't
+            check my XMPP very often :c
+          </li>
+        </ul>
+      </main>
+      <aside class="right">
+        <h1>Navbar</h1>
+        <ul>
+          <li><a href="./blog/blog.html">Blog</a></li>
+        </ul>
+        <ul>
+          <li><a href="./ps.html">Penspinning</a></li>
+        </ul>
+      </aside>
+    </div>
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

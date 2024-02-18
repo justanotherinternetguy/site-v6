@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>userland</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" href="../assets/pfp.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/next.css" />
+  </head>
+
+  <body>
+    <div class="flex">
+      <button type="button" onclick="toggleCSS()" class="disable-css card">
+        Toggle CSS (for mobile users)
+      </button>
+      <button
+        type="button"
+        onclick="toggleWallpaper()"
+        class="disable-css card"
+      >
+        Toggle Wallpaper
+      </button>
+    </div>
+    <header class="cont">
+      <img id="profile-image" src="../assets/pfp.png" alt="Profile Picture" />
+      <h1>Blog post compendium</h1>
+    </header>
+
+    <div class="snow">
+      <div></div>
+    </div>
+    <!-- <div class="terminal no">
+      <pre id="output"></pre>
+      <div class="input-prompt">enter your command:</div>
+      <input id="input" type="text" autofocus />
+    </div> -->
+
+    <div class="flex">
+      <main>
+        <h1>Directory of blog posts:</h1>
+        <ul>
+          <li>Linguistics blog</li>
+          <ul>
+            <li>
+              <a href="./lang/english_cases.html"
+                >Overview regarding English cases</a
+              >
+            </li>
+            <!-- <li>
+              <a href="./lang/neography.html"
+                >No conlang is complete without a writing system!</a
+              >
+            </li> -->
+          </ul>
+        </ul>
+      </main>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>
